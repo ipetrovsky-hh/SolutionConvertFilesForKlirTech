@@ -5,6 +5,29 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <BaseOutputPath>C:\Users\resum\source\repos\SolutionConvertFilesForKlirTech\SolutionConvertFilesForKlirTech\bin</BaseOutputPath>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Files\format1Result.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="Files\format1Result.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Files\format1.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\format2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Files\format2Result.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>
